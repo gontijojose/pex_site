@@ -5,4 +5,46 @@ img {
   img:hover {
     transform: scale(1.05); 
   }
-  
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #02D3C9;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: #01afa6;
+}
+
+.counter-group {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.counter {
+  flex: 1;
+  margin: 0 10px;
+  color: #333;
+}
+
+.counter-number-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #02D3C9;
+}
+
+.counter-number-prefix,
+.counter-number-suffix {
+  font-size: 24px;
+}
+
+.counter-title {
+  font-size: 18px;
+  color: #555;
+  margin-top: 8px;
+}

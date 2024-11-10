@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import './App.css';
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
-import Servicos from './pages/Servicos';
+import Doe from './pages/Doe';
 import Contato from './pages/Contato';
 import Footer from './components/Footer';
 import AOS from 'aos';
@@ -15,15 +15,21 @@ function App() {
       }, []);
   return (
     <Router>
-      <Navbar bg="primary" variant="dark" expand="lg">
+      <Navbar bg="primary" expand="lg">
         <Container>
-          <Navbar.Brand href="/">Alpha Educação</Navbar.Brand>
+        <Navbar.Brand href="/">
+            <img
+              src="/logo.png"
+              width="40"
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/sobre">Sobre</Nav.Link>
-              <Nav.Link href="/servicos">Serviços</Nav.Link>
+              <Nav.Link href="/Doe">Doe Agora!</Nav.Link>
               <Nav.Link href="/contato">Contato</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -33,7 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
-        <Route path="/servicos" element={<Servicos />} />
+        <Route path="/Doe" element={<Doe />} />
         <Route path="/contato" element={<Contato />} />
       </Routes>
       <Footer />

@@ -1,36 +1,44 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
-import Depoimentos from '../components/Depoimentos';
+import CounterGroup from '../components/CounterGroup';
+import Carrosel from '../components/Carrosel';
 
 function Home() {
   return (
-    <Container fluid className="bg-primary text-white text-center py-5">
-      <h1 data-aos="fade-up">Bem-vindo à Alpha Educação</h1>
-      <p>Excelência no ensino e desenvolvimento profissional.</p>
-      <Button variant="light" href="/sobre">
-        Saiba Mais
-      </Button>
+    <Container fluid className="text-center py-5">
 
       <Container className="mt-5">
         <Row className="my-5">
-          <Col md={4} className="text-center">
-            <img src="img1.jpg" alt="Missão" className="img-fluid rounded-circle mb-3" />
-            <h3>Nossa Missão</h3>
-            <p>Capacitar indivíduos para enfrentar os desafios do mercado de trabalho.</p>
+        <Col md={6} className="text-center">
+            <img
+              src="/home0.png"
+              className="img-fluid mb-3"
+            />
           </Col>
-          <Col md={4} className="text-center">
-            <img src="img2.jpg" alt="Visão" className="img-fluid rounded-circle mb-3" />
-            <h3>Nossa Visão</h3>
-            <p>Ser uma referência em educação de qualidade e inovação no ensino.</p>
+          <Col md={6} className="text-center">
+            <img
+              src="/home1.png"
+              className="img-fluid mb-3"
+            />
           </Col>
-          <Col md={4} className="text-center">
-            <img src="img3.jpg" alt="Valores" className="img-fluid rounded-circle mb-3" />
-            <h3>Nossos Valores</h3>
-            <p>Compromisso, ética, inovação e respeito à diversidade.</p>
+          </Row>
+          <CounterGroup />
+          <Row className="my-5">
+          <Col md={6} className="text-center">
+          <img
+              src="/home2.png"
+              className="img-fluid mb-3"
+            />
+          </Col>
+          <Col md={6} className="text-center">
+          <img
+              src="/home3.png"
+              className="img-fluid mb-3"
+            />
           </Col>
         </Row>
       </Container>
-      <Depoimentos />
+      <Carrosel />
     </Container>
   );
 }

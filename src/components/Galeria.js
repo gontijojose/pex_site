@@ -3,12 +3,10 @@ import { Row, Col } from 'react-bootstrap';
 
 function Galeria() {
   const imagens = [
-    'img1.jpg',
-    'img2.jpg',
-    'img3.jpg',
-    'img4.jpg',
-    'img5.jpg',
-    'img6.jpg',
+    'sobre1.jpg',
+    'sobre2.jpg',
+    'sobre3.jpg',
+    'sobre4.jpg'
   ];
 
   return (
@@ -16,7 +14,7 @@ function Galeria() {
       <h3 className="text-center">Galeria de Fotos</h3>
       <Row className="mt-4">
         {imagens.map((imagem, index) => (
-          <Col md={4} className="mb-4" key={index}>
+          <Col md={3} className="mb-3" key={index}>
             <img
               src={imagem}
               alt={`Imagem ${index + 1}`}
